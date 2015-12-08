@@ -1,0 +1,22 @@
+##Attribute Installer - Customer
+
+$installer = $this;
+
+$installer->startSetup();
+
+$installer->addAttribute('customer', 'attribute_code', array(
+    'label' => 'Label Attribute',
+    'type' => 'int',
+    'input' => 'boolean',
+    'source' => 'eav/entity_attribute_source_boolean',
+    'user_defined' => true,
+    'global' => true,
+    'visible' => true,
+    'required' => false,
+    'default' => '0',
+));
+
+$installer->endSetup();
+
+
+
